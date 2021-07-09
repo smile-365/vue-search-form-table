@@ -1,0 +1,45 @@
+{
+  "name": "@zhanghaibiao/search-form-table",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "A Vue2 table component based on el-table of Element UI with search-form support and pagination, auto-height-table features",
+  "homepage": "https://github.com/zhanghaibiao4913/vue-search-form-table",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhanghaibiao4913/vue-search-form-table"
+  },
+  "keywords": [
+    "vue",
+    "element-ui",
+    "el-table",
+    "search-form-table"
+  ],
+  "main": "lib/vue-search-form-table.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name vue-search-form-table --dest lib ./packages/index.js",
+    "npm": "npm config set registry=https://registry.npmjs.org",
+    "cnpm": "npm config set registry=https://registry.npm.taobao.org",
+    "publish": "npm publish --access=public"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.3",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-plugin-component": "^1.1.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

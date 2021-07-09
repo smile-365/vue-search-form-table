@@ -1,36 +1,5 @@
-## vue-search-form-table
-
-一个基于element-ui二次封装的table组件，保护表单查询、分页、表格高度自适应滚动。
-
-![预览](./screenshot/1.png)
-
-### 下载
-```
-npm i @zhanghaibiao/search-form-table --save
-```
-
-### 安装
-
-全局安装
-```
-// main.js
-import SearchFormTable from '@zhanghaibiao/search-form-table'
-Vue.use(SearchFormTable)
-```
-
-局部安装
-
-```
-import { SearchFormTable } from '@zhanghaibiao/search-form-table'
-components: {
-  SearchFormTable
-}
-```
-
-### example
-```
 <template>
-  <div style="padding: 20px;">
+  <div id="app" style="padding: 20px;">
     <search-form-table
       v-model="query"
       :search-form="searchForm"
@@ -73,7 +42,7 @@ export default {
         {
           label: '订单号',
           type: 'input',
-          key: 'orderNo', // key与query对应
+          key: 'orderNo',
           labelInfo: '这是订单号的输入框'
         },
         {
@@ -123,6 +92,31 @@ export default {
   }
 }
 </script>
-```
 
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+}
+div {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+p,
+div {
+  padding: 0;
+  margin: 0
+}
+</style>
