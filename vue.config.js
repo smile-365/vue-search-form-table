@@ -3,6 +3,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '././' : '',
   chainWebpack: config => {
     config.module
       .rule('js')
@@ -15,5 +16,8 @@ module.exports = {
         return options
       })
   },
-  productionSourceMap: false
+  productionSourceMap: false,
+  css: {
+    extract: false
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@zhanghaibiao/search-form-table",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "private": false,
   "license": "MIT",
   "description": "A Vue2 table component based on el-table of Element UI with search-form support and pagination, auto-height-table features",
