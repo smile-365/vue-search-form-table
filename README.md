@@ -125,4 +125,22 @@ export default {
 </script>
 ```
 
+### 参数说明
+
+|  参数   | 说明  |  类型   | 是否必填  | 默认值  |
+|  ----  | ----  |  ----  | ----  |  ----  |
+|  value/v-model   | 查询条件对象  |  Object   | 是  |   |
+|  search-form   | 表单  |  Array   |  否  |  []  |
+|  page-index-key   | 查询条件里的页码key  |  String   |  否  |  pageIndex  |
+|  page-size-key   | 查询条件里的每页数量key  |  String   |  否  |  pageSize  |
+|  page-sizes   | 每页显示个数选择器的选项设置  |  Number[]   |  否  |  [10, 20, 30, 40, 50, 100]  |
+|  total   | 列表总数量  |  Number   |  否  |  0  |
+|  hide-pagination   | 隐藏分页  |  Boolean   |  否  |  false  |
+|  loading   | 表格显示loading  |  Boolean   |  否  |  false  |
+|  form-collapse   | 表单是否开启可折叠  |  Boolean   |  否  |  true  |
+|  enable-table-height   | 是否表格高度自适应  |  Boolean   |  否  |  true  |
+|  bottom-offset   | 表格距离底部的距离（enable-table-height为true时有效）  |  Number   |  否  |  60  |
+|  ui-size   | 组件尺寸大小：medium、small、mini  |  String   |  否  |    |
+|  label-width   | form表单的label-width  |  String   |  否  |    |
+
 

@@ -4,7 +4,7 @@
       <div 
         ref="box" 
         class="form-container" 
-        :class="{'show-arrow': arrowSwitch && showArrow, 'collapse': collapse}"
+        :class="{'show-arrow': formCollapse && showArrow, 'collapse': collapse}"
         :style="{'--h': sizeH - 10 + 'px' }">
         <el-form :model="query" inline :size="uiSize" :label-width="labelWidth" @submit.native.prevent>
           <el-form-item v-for="(item, index) in searchForm" :key="index" :label="item.label" :prop="item.key">
@@ -89,7 +89,7 @@
           </el-form-item>
         </el-form>
       </div>
-      <div v-if="arrowSwitch && showArrow" class="arrow-container">
+      <div v-if="formCollapse && showArrow" class="arrow-container">
         <i :class="collapse ? 'el-icon-arrow-up' : 'el-icon-arrow-down'" @click="onCollapse"></i>
       </div>
     </div>
@@ -159,7 +159,7 @@ export default {
     // 可选的页数
     pageSizes: {
       type: Array,
-      default: () => [10, 20, 30, 40, 50]
+      default: () => [10, 20, 30, 40, 50, 100]
     },
     // 总数
     total: {
@@ -167,7 +167,7 @@ export default {
       default: 0
     },
     // 是否显示折叠箭头
-    arrowSwitch:{
+    formCollapse: {
       type: Boolean,
       default: true
     },
