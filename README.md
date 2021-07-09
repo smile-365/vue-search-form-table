@@ -1,6 +1,6 @@
 ## vue-search-form-table
 
-一个基于element-ui二次封装的table组件，保护表单查询、分页、表格高度自适应滚动。
+一个基于element-ui二次封装的table组件，包括表单查询、分页、表格高度自适应滚动。
 
 ![预览](./screenshot/1.png)
 
