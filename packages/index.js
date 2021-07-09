@@ -1,5 +1,3 @@
-import 'element-ui/lib/theme-chalk/index.css'
-
 import SearchFormTable from './SearchFormTable'
 // 存储组件列表
 const components = [SearchFormTable]
